@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import img from "../assets/header.gif"
 import among from "../assets/among.gif"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 const Home = () => {
     const [url, setUrl] = useState("")
@@ -44,6 +45,9 @@ const Home = () => {
                         <button className=" mr-4 rounded-md" onClick={handleButtonClick}> <img src={img} className="drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]" height={80} width={80} alt="image not found" /></button>
 
                     </div>
+                </div>
+                <div>
+                    <Link to={"/generateLink"}>Generate Link</Link>
                 </div>
             </div>
         </>
